@@ -60,3 +60,23 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify-acknowledgements.markdown
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify-acknowledgements.plist
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify-dummy.m
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify-Info.plist
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify-umbrella.h
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify.debug.xcconfig
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify.modulemap
+
+Pods/Target Support Files/Pods-Lunchify/Pods-Lunchify.release.xcconfig
+
+Pods/Target Support Files/SwiftLint/SwiftLint.debug.xcconfig
+
+Pods/Target Support Files/SwiftLint/SwiftLint.release.xcconfig

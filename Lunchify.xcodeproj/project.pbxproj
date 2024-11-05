@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45B67C6C5C6032B4931A1166 /* Pods_Lunchify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4218DCB98AA93DE5CE4F4669 /* Pods_Lunchify.framework */; };
 		6F89A3652CC0E53D006DD8B5 /* LunchifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89A3642CC0E53D006DD8B5 /* LunchifyApp.swift */; };
 		6F89A3672CC0E53D006DD8B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89A3662CC0E53D006DD8B5 /* ContentView.swift */; };
 		6F89A3692CC0E53D006DD8B5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89A3682CC0E53D006DD8B5 /* Item.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		249580C1592A94EBF2D90C76 /* Pods-Lunchify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lunchify.release.xcconfig"; path = "Target Support Files/Pods-Lunchify/Pods-Lunchify.release.xcconfig"; sourceTree = "<group>"; };
+		4218DCB98AA93DE5CE4F4669 /* Pods_Lunchify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lunchify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F89A3612CC0E53D006DD8B5 /* Lunchify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lunchify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F89A3642CC0E53D006DD8B5 /* LunchifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchifyApp.swift; sourceTree = "<group>"; };
 		6F89A3662CC0E53D006DD8B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +26,7 @@
 		6F89A36A2CC0E540006DD8B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F89A36D2CC0E540006DD8B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FCC39782CD966E6008E6C41 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		88312F63991BF6AABBF765AC /* Pods-Lunchify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lunchify.debug.xcconfig"; path = "Target Support Files/Pods-Lunchify/Pods-Lunchify.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B67C6C5C6032B4931A1166 /* Pods_Lunchify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 				6FCC39782CD966E6008E6C41 /* .gitignore */,
 				6F89A3632CC0E53D006DD8B5 /* Lunchify */,
 				6F89A3622CC0E53D006DD8B5 /* Products */,
+				A8825167E0686C126BFA14F0 /* Pods */,
+				F69C4C18A45A48DA9CAAD02F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A8825167E0686C126BFA14F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88312F63991BF6AABBF765AC /* Pods-Lunchify.debug.xcconfig */,
+				249580C1592A94EBF2D90C76 /* Pods-Lunchify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F69C4C18A45A48DA9CAAD02F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4218DCB98AA93DE5CE4F4669 /* Pods_Lunchify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F89A3712CC0E540006DD8B5 /* Build configuration list for PBXNativeTarget "Lunchify" */;
 			buildPhases = (
+				FF89720B877F6F238031B3A6 /* [CP] Check Pods Manifest.lock */,
 				6F89A35D2CC0E53D006DD8B5 /* Sources */,
 				6F89A35E2CC0E53D006DD8B5 /* Frameworks */,
 				6F89A35F2CC0E53D006DD8B5 /* Resources */,
+				6F2CE9142CDA16810043FF6F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -138,6 +164,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F2CE9142CDA16810043FF6F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		FF89720B877F6F238031B3A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lunchify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F89A35D2CC0E53D006DD8B5 /* Sources */ = {
@@ -274,6 +342,7 @@
 		};
 		6F89A3722CC0E540006DD8B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88312F63991BF6AABBF765AC /* Pods-Lunchify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -281,6 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lunchify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,6 +372,7 @@
 		};
 		6F89A3732CC0E540006DD8B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249580C1592A94EBF2D90C76 /* Pods-Lunchify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lunchify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
