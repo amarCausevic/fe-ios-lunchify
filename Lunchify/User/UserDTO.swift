@@ -1,6 +1,6 @@
 import Foundation
 
-struct UserDTO: Identifiable, Decodable {
+struct UserDTO: Codable {
     let id: String
     let name: String
     let displayName: String

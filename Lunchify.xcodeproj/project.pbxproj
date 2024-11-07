@@ -14,6 +14,10 @@
 		6F89A36B2CC0E540006DD8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F89A36A2CC0E540006DD8B5 /* Assets.xcassets */; };
 		6F89A36E2CC0E540006DD8B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F89A36D2CC0E540006DD8B5 /* Preview Assets.xcassets */; };
 		6FCC39792CD966E6008E6C41 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC39782CD966E6008E6C41 /* .gitignore */; };
+		6FD99F9B2CDD528F00D30C36 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD99F9A2CDD527F00D30C36 /* UserController.swift */; };
+		6FD99F9F2CDD54C500D30C36 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD99F9E2CDD54B800D30C36 /* Endpoints.swift */; };
+		6FD99FA12CDD563B00D30C36 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD99FA02CDD563900D30C36 /* HTTP.swift */; };
+		6FD99FA32CDD573000D30C36 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD99FA22CDD572C00D30C36 /* Constant.swift */; };
 		6FFE5A9B2CDAA055001B9468 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFE5A9A2CDAA055001B9468 /* UserDTO.swift */; };
 		6FFE5A9D2CDAA239001B9468 /* UserListVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFE5A9C2CDAA239001B9468 /* UserListVIewModel.swift */; };
 		6FFE5AA02CDAAB74001B9468 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFE5A9F2CDAAB74001B9468 /* ApiService.swift */; };
@@ -29,6 +33,10 @@
 		6F89A36A2CC0E540006DD8B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F89A36D2CC0E540006DD8B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FCC39782CD966E6008E6C41 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6FD99F9A2CDD527F00D30C36 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		6FD99F9E2CDD54B800D30C36 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		6FD99FA02CDD563900D30C36 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		6FD99FA22CDD572C00D30C36 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		6FFE5A9A2CDAA055001B9468 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		6FFE5A9C2CDAA239001B9468 /* UserListVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVIewModel.swift; sourceTree = "<group>"; };
 		6FFE5A9F2CDAAB74001B9468 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 				6F89A3682CC0E53D006DD8B5 /* Item.swift */,
 				6F89A36A2CC0E540006DD8B5 /* Assets.xcassets */,
 				6F89A36C2CC0E540006DD8B5 /* Preview Content */,
+				6FD99FA22CDD572C00D30C36 /* Constant.swift */,
 			);
 			path = Lunchify;
 			sourceTree = "<group>";
@@ -88,9 +97,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6FD99F9D2CDD54AD00D30C36 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				6FD99FA02CDD563900D30C36 /* HTTP.swift */,
+				6FD99F9E2CDD54B800D30C36 /* Endpoints.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
 		6FFE5A992CDA9FA3001B9468 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				6FD99F9A2CDD527F00D30C36 /* UserController.swift */,
 				6FFE5A9A2CDAA055001B9468 /* UserDTO.swift */,
 				6FFE5A9C2CDAA239001B9468 /* UserListVIewModel.swift */,
 			);
@@ -100,6 +119,7 @@
 		6FFE5A9E2CDAA399001B9468 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6FD99F9D2CDD54AD00D30C36 /* enums */,
 				6FFE5A9F2CDAAB74001B9468 /* ApiService.swift */,
 			);
 			path = Utilities;
@@ -237,11 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD99FA12CDD563B00D30C36 /* HTTP.swift in Sources */,
 				6F89A3672CC0E53D006DD8B5 /* ContentView.swift in Sources */,
 				6F89A3692CC0E53D006DD8B5 /* Item.swift in Sources */,
 				6FFE5AA02CDAAB74001B9468 /* ApiService.swift in Sources */,
 				6FFE5A9B2CDAA055001B9468 /* UserDTO.swift in Sources */,
+				6FD99F9B2CDD528F00D30C36 /* UserController.swift in Sources */,
 				6FFE5A9D2CDAA239001B9468 /* UserListVIewModel.swift in Sources */,
+				6FD99FA32CDD573000D30C36 /* Constant.swift in Sources */,
+				6FD99F9F2CDD54C500D30C36 /* Endpoints.swift in Sources */,
 				6F89A3652CC0E53D006DD8B5 /* LunchifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
