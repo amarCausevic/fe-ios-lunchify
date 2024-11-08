@@ -26,3 +26,4 @@ class UserListViewModel: ObservableObject {
             self.isLoading = false
         }
     }
+}
