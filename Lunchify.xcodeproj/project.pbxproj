@@ -81,6 +81,7 @@
 		6F89A3632CC0E53D006DD8B5 /* Lunchify */ = {
 			isa = PBXGroup;
 			children = (
+				6FE5568B2CDF7B2700BFC355 /* Assets */,
 				6FCE013D2CDEAF4900A85EB8 /* Login */,
 				6FFE5A9E2CDAA399001B9468 /* Utilities */,
 				6FFE5A992CDA9FA3001B9468 /* User */,
@@ -118,6 +119,13 @@
 				6FD99F9E2CDD54B800D30C36 /* Endpoints.swift */,
 			);
 			path = enums;
+			sourceTree = "<group>";
+		};
+		6FE5568B2CDF7B2700BFC355 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		6FFE5A992CDA9FA3001B9468 /* User */ = {

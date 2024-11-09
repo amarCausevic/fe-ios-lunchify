@@ -12,8 +12,10 @@ class UserListViewModel: ObservableObject {
         isLoading = true
         errorMessage = nil
         let request = Endpoints.fetchUser().request!
-        //Cannot assign value of type 'Result<[UserDTO]?, any Error>' to type 'Result<[UserDTO], any Error>'
+        
         Task {
+            try await Task.sleep(nanoseconds: 2_000_000_000)
+
             let result: Result<[UserDTO], Error> = await ApiService.shared.request(with: request,  model: [UserDTO].self)
             
             switch result {

@@ -17,19 +17,33 @@ struct UsersView: View{
                 Text("Error: \(errorMessage)")
                     .foregroundColor(.red)
             } else {
-                List(viewModel.users, id: \.id) {user in Text(user.displayName)}.scrollContentBackground(.hidden)
+                List(viewModel.users, id: \.id) {user in
+                    HStack{
+                        Image("profile_picture")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 100, height: 100, alignment: .center)
+                            .clipShape(Circle())
+                            .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                            .shadow(radius: 10)
+                            .background(Color.clear)
+                        Text(user.displayName)
+                            .font(.title)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                    }.scrollContentBackground(.hidden)
+                }
             }
         }
         .onAppear {
             viewModel.loadUsers()
         }
-        
         .padding()
-        .background(LinearGradient(
-            gradient: gradient,
-            startPoint: .init(x: 0.50, y: 1.00),
-            endPoint: .init(x: 0.50, y: 0.00)
-        ))
         .edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct UsersView_Previews: PreviewProvider {
+    static var previews: some View {
+        UsersView()
     }
 }
