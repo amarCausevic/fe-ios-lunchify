@@ -2,6 +2,7 @@ import Foundation
 
 enum Endpoints {
     case fetchUser(url: String = "/api/user")
+    case fetchOrders(url: String = "/api/order")
     case updateUser(url: String = "/api/user", update: UserDTO)
     
     var request: URLRequest? {
@@ -27,6 +28,7 @@ enum Endpoints {
     private var path: String {
            switch self {
            case .fetchUser(let url): return url
+           case .fetchOrders(let url): return url
            case .updateUser(let url, _): return url
            }
        }
@@ -34,6 +36,8 @@ enum Endpoints {
     private var httpMethod: String {
         switch self {
         case .fetchUser:
+            return HTTP.Method.get.rawValue
+        case .fetchOrders:
             return HTTP.Method.get.rawValue
         case .updateUser:
             return HTTP.Method.post.rawValue
@@ -44,6 +48,8 @@ enum Endpoints {
         switch self {
         case .fetchUser:
             return nil
+        case .fetchOrders:
+            return nil
         case .updateUser(_, let update):
             let jsonPost = try? JSONEncoder().encode(update)
             return jsonPost
@@ -52,10 +58,11 @@ enum Endpoints {
 }
 
 extension URLRequest {
-    
     mutating func addValues(for endpoints: Endpoints) {
         switch endpoints {
         case .fetchUser:
+            break
+        case .fetchOrders:
             break
         case .updateUser:
             self.setValue(
